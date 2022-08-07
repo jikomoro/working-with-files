@@ -1,0 +1,15 @@
+import os  #imports OS library
+
+fileLocation = input("Enter the location where you want to save the file: ")
+fileName = input("Enter the name of the file: ")
+
+#checks if the directory exists or not
+os.path.exists(fileLocation)
+
+userInfo = input("Enter your name, address, and number: ")
+s = str.split(',')
+# to write data in a comma-separated line
+
+y = open("/Users/jaemarienicolemontero/Desktop/week9.txt", "w")
+y.write(userInfo)
+#writes userInfo into a file in the directory
